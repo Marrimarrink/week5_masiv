@@ -15,13 +15,13 @@ public class Calc {
     }
 
     public static int countOddNum(int[] array) {
-        int count = 0; // Переменная для хранения количества нечетных чисел
-        for (int num : array) { // Перебор каждого числа в массиве
-            if (num % 2 != 0) { // Проверка, является ли число нечетным
-                count++; // Увеличиваем счетчик, если число нечетное
+        int count = 0;
+        for (int num : array) {
+            if (num % 2 != 0) {
+                count++;
             }
         }
-        return count; // Возвращаем общее количество нечетных чисел
+        return count;
     }
 
     public static boolean isPrime(int num) {
@@ -65,7 +65,7 @@ public class Calc {
         int sumOddNum = 0;
         for (int num = 0; num < array.length; num++)
             if (num % 2 == 0) {
-                sumEvenNum += array[num]; // Добавляем элемент с четным индексом к sumEvenNum
+                sumEvenNum += array[num];
             } else {
                 sumOddNum += array[num];
             }

@@ -1,12 +1,31 @@
 package _main;
 
+import java.util.Random;
 import java.util.stream.IntStream;
 
 import static util.Calc.*;
 
 public class Main {
     public static void main(String[] arg) {
-        int[] arr = new int[]{5, -3, 2, 1, 7, 11, 12, -4, 1, 10};
+        int[] arr = new int[10];
+        Random random = new Random();
+
+        // Заполнить  массив случайными числами от -10 до 10
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(21) - 10;
+        }
+
+
+        System.out.print("Сгенерированный массив: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+
+
+
+        //int[] arr = new int[]{5, -3, 2, 1, 7, 11, 12, -4, 1, 10};
 
         // Длина массива = 10
         // System.out.println(arr.length);
