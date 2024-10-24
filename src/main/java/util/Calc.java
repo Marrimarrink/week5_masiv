@@ -57,6 +57,7 @@ public class Calc {
                 count++;
             }
         }
+
         return count;
     }
     public static int countDiffSum(int[] array){

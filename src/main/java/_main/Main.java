@@ -16,6 +16,8 @@ public class Main {
         }
 
 
+
+
         System.out.print("Сгенерированный массив: ");
         for (int num : arr) {
             System.out.print(num + " ");
