@@ -16,8 +16,6 @@ public class Main {
         }
 
 
-
-
         System.out.print("Сгенерированный массив: ");
         for (int num : arr) {
             System.out.print(num + " ");
@@ -49,7 +47,8 @@ public class Main {
         System.out.println("Кол-во простых чисел в массиве: " + primeCount);
 
         // 4. сумму всех чисел в массиве = 42
-        int sumAllNum = IntStream.of(arr).sum();
+       // int sumAllNum = IntStream.of(arr).sum();
+        int sumAllNum = sumAllNum(arr);
         System.out.println("Сумма всех чисел в массиве: " + sumAllNum);
 
         //  5. разность между суммой чисел имеющих четный индекс и суммой чисел имеющих нечетный индекс в массиве =12
